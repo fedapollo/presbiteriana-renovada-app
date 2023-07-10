@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "768796824422",
+    "firebase_url": "https://presbiteriana-renovada-app-default-rtdb.firebaseio.com",
+    "project_id": "presbiteriana-renovada-app",
+    "storage_bucket": "presbiteriana-renovada-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:768796824422:android:1482f0528f5337af366ea7",
+        "android_client_info": {
+          "package_name": "com.example.presbiteriana_renovada_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "768796824422-rqo3epetsi1tq0rjvujgte2pq44vlncb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDrb1FI5kFHsYARFh-XoBbbmXeVfzCOOo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "768796824422-rqo3epetsi1tq0rjvujgte2pq44vlncb.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "768796824422-lt85osfnpfm48itfoirefsgpjmj1suke.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.presbiterianaRenovadaApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
