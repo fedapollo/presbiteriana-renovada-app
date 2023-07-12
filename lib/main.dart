@@ -2,7 +2,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:igreja_presbiteriana_app/screens/bottom_navigation_tab.dart';
-import 'package:igreja_presbiteriana_app/screens/home.dart';
 import 'package:igreja_presbiteriana_app/screens/login.dart';
 import 'package:igreja_presbiteriana_app/screens/splash.dart';
 

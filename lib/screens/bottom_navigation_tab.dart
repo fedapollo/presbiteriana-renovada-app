@@ -27,7 +27,7 @@ class _BottomNavigationTabScreenState extends State<BottomNavigationTabScreen> {
     return Scaffold(
         body: container,
         bottomNavigationBar: BottomNavigationBar(
-          selectedItemColor: Colors.lightBlueAccent,
+          selectedItemColor: Colors.indigo[900],
           unselectedItemColor: Colors.white,
           backgroundColor: Colors.blueAccent,
           onTap: _selectPage,

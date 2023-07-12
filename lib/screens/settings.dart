@@ -9,7 +9,7 @@ class SettingsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.indigo,
+      backgroundColor: Colors.indigo[900],
       appBar: AppBar(
         backgroundColor: Colors.blueAccent,
         title: const Text(
@@ -22,13 +22,13 @@ class SettingsScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Center(
-                child: Text('Configurações'),
-              ),
               ElevatedButton(
                 onPressed: () {
                   FirebaseAuth.instance.signOut();
                 },
+                style: ElevatedButton.styleFrom(
+                  foregroundColor: Colors.indigo[900],
+                ),
                 child: const Text('Sair da conta'),
               ),
             ],

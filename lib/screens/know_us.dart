@@ -1,5 +1,9 @@
+import 'dart:io';
+
+import 'package:android_intent_plus/android_intent.dart';
 import 'package:flutter/material.dart';
 import 'package:map_launcher/map_launcher.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class KnowUsScreen extends StatelessWidget {
   const KnowUsScreen({super.key});
@@ -8,13 +12,26 @@ class KnowUsScreen extends StatelessWidget {
 
   void _launchMapsUrl(double lat, double lon) async {
     final availableMaps = await MapLauncher.installedMaps;
-    print(
-        availableMaps); // [AvailableMap { mapName: Google Maps, mapType: google }, ...]
 
     await availableMaps.first.showMarker(
       coords: Coords(lat, lon),
       title: "Igreja Presbiteriana Renovada de Indaiatuba",
     );
+  }
+
+  void _launchURL(String www) async {
+    if (Platform.isAndroid) {
+      AndroidIntent intent = AndroidIntent(
+        action: 'action_view',
+        data: www,
+      );
+      await intent.launch();
+    } else {
+      final Uri url = Uri.parse(www);
+      if (!await launchUrl(url)) {
+        throw Exception('Could not launch $url');
+      }
+    }
   }
 
   @override
@@ -62,7 +79,9 @@ class KnowUsScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   GestureDetector(
-                    onTap: () {},
+                    onTap: () {
+                      _launchURL('https://www.facebook.com/iprielizeu/about');
+                    },
                     child: const ImageIcon(
                       AssetImage("assets/images/facebook.png"),
                       color: Colors.white,
@@ -70,10 +89,12 @@ class KnowUsScreen extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(
-                    width: 12,
+                    width: 24,
                   ),
                   GestureDetector(
-                    onTap: () {},
+                    onTap: () {
+                      _launchURL('https://www.instagram.com/ipr.indaiatuba');
+                    },
                     child: const ImageIcon(
                       AssetImage("assets/images/instagram.png"),
                       color: Colors.white,
@@ -81,10 +102,12 @@ class KnowUsScreen extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(
-                    width: 12,
+                    width: 24,
                   ),
                   GestureDetector(
-                    onTap: () {},
+                    onTap: () {
+                      _launchURL('https://open.spotify.com/show/6WCYBCj85nY8UeYo6AYwEM?si=b57604c38ef34b04&utm_medium=share&utm_source=linktree&nd=1');
+                    },
                     child: const ImageIcon(
                       AssetImage("assets/images/spotify.png"),
                       color: Colors.white,
@@ -92,10 +115,12 @@ class KnowUsScreen extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(
-                    width: 12,
+                    width: 24,
                   ),
                   GestureDetector(
-                    onTap: () {},
+                    onTap: () {
+                      _launchURL('https://www.youtube.com/channel/UC3EWuJi_s3urWb23uRJ6Crw');
+                    },
                     child: const ImageIcon(
                       AssetImage("assets/images/youtube.png"),
                       color: Colors.white,
@@ -107,10 +132,11 @@ class KnowUsScreen extends StatelessWidget {
               const SizedBox(
                 height: 100,
               ),
-              TextButton(
+              ElevatedButton(
                 onPressed: () {
                   Navigator.of(context).pop();
                 },
+                style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.indigo[900]),),
                 child: const Text(
                   'Voltar para o login',
                   style: TextStyle(color: Colors.white),
