@@ -5,6 +5,8 @@ import 'package:igreja_presbiteriana_app/screens/know_us.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
+import '../models/event_category.dart';
+
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
 
@@ -24,690 +26,6 @@ class _LoginScreenState extends State<LoginScreen> {
     const baseUrl =
         'https://presbiteriana-renovada-app-default-rtdb.firebaseio.com/schedules/';
 
-    // janeiro
-    await http.post(
-      Uri.parse('$baseUrl/2023/01.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1688331600000,
-        'endTime': 1688331600000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/01.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1688936400000,
-        'endTime': 1688936400000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/01.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1689541200000,
-        'endTime': 1689541200000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/01.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1690146000000,
-        'endTime': 1690146000000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/01.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1690750800000,
-        'endTime': 1690750800000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/01.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'EBF',
-        'type': 'EVENT',
-        'description': 'Escola bíblica dominical especial de férias',
-        'startTime': 1689508800000,
-        'endTime': 1689508800000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/01.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Encontro de casais',
-        'type': 'EVENT',
-        'description': 'Para namorados e casados!',
-        'startTime': 1689807600000,
-        'endTime': 1689807600000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/01.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Encontro das Mulheres',
-        'type': 'EVENT',
-        'description': 'Um tempo para as irmãs falarem de Deus da perspectiva feminina',
-        'startTime': 1689721200000,
-        'endTime': 1689721200000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/01.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Encontro dos Homens',
-        'type': 'EVENT',
-        'description': 'Todos os homens convocados para a batalha!',
-        'startTime': 1690066800000,
-        'endTime': 1690066800000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    //fevereiro
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/02.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1688331600000,
-        'endTime': 1688331600000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/02.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1688936400000,
-        'endTime': 1688936400000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/02.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1689541200000,
-        'endTime': 1689541200000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/02.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1690146000000,
-        'endTime': 1690146000000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/02.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1690750800000,
-        'endTime': 1690750800000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/02.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'EBF',
-        'type': 'EVENT',
-        'description': 'Escola bíblica dominical especial de férias',
-        'startTime': 1689508800000,
-        'endTime': 1689508800000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/02.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Encontro de casais',
-        'type': 'EVENT',
-        'description': 'Para namorados e casados!',
-        'startTime': 1689807600000,
-        'endTime': 1689807600000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/02.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Encontro das Mulheres',
-        'type': 'EVENT',
-        'description': 'Um tempo para as irmãs falarem de Deus da perspectiva feminina',
-        'startTime': 1689721200000,
-        'endTime': 1689721200000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/02.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Encontro dos Homens',
-        'type': 'EVENT',
-        'description': 'Todos os homens convocados para a batalha!',
-        'startTime': 1690066800000,
-        'endTime': 1690066800000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    // março
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/03.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1688331600000,
-        'endTime': 1688331600000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/03.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1688936400000,
-        'endTime': 1688936400000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/03.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1689541200000,
-        'endTime': 1689541200000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/03.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1690146000000,
-        'endTime': 1690146000000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/03.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1690750800000,
-        'endTime': 1690750800000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/03.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'EBF',
-        'type': 'EVENT',
-        'description': 'Escola bíblica dominical especial de férias',
-        'startTime': 1689508800000,
-        'endTime': 1689508800000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/03.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Encontro de casais',
-        'type': 'EVENT',
-        'description': 'Para namorados e casados!',
-        'startTime': 1689807600000,
-        'endTime': 1689807600000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/03.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Encontro das Mulheres',
-        'type': 'EVENT',
-        'description': 'Um tempo para as irmãs falarem de Deus da perspectiva feminina',
-        'startTime': 1689721200000,
-        'endTime': 1689721200000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/03.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Encontro dos Homens',
-        'type': 'EVENT',
-        'description': 'Todos os homens convocados para a batalha!',
-        'startTime': 1690066800000,
-        'endTime': 1690066800000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    // abril
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/04.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1688331600000,
-        'endTime': 1688331600000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/04.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1688936400000,
-        'endTime': 1688936400000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/04.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1689541200000,
-        'endTime': 1689541200000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/04.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1690146000000,
-        'endTime': 1690146000000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/04.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1690750800000,
-        'endTime': 1690750800000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/04.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'EBF',
-        'type': 'EVENT',
-        'description': 'Escola bíblica dominical especial de férias',
-        'startTime': 1689508800000,
-        'endTime': 1689508800000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/04.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Encontro de casais',
-        'type': 'EVENT',
-        'description': 'Para namorados e casados!',
-        'startTime': 1689807600000,
-        'endTime': 1689807600000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/04.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Encontro das Mulheres',
-        'type': 'EVENT',
-        'description': 'Um tempo para as irmãs falarem de Deus da perspectiva feminina',
-        'startTime': 1689721200000,
-        'endTime': 1689721200000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/04.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Encontro dos Homens',
-        'type': 'EVENT',
-        'description': 'Todos os homens convocados para a batalha!',
-        'startTime': 1690066800000,
-        'endTime': 1690066800000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    // maio
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/05.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1688331600000,
-        'endTime': 1688331600000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/05.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1688936400000,
-        'endTime': 1688936400000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/05.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1689541200000,
-        'endTime': 1689541200000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/05.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1690146000000,
-        'endTime': 1690146000000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/05.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1690750800000,
-        'endTime': 1690750800000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/05.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'EBF',
-        'type': 'EVENT',
-        'description': 'Escola bíblica dominical especial de férias',
-        'startTime': 1689508800000,
-        'endTime': 1689508800000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/05.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Encontro de casais',
-        'type': 'EVENT',
-        'description': 'Para namorados e casados!',
-        'startTime': 1689807600000,
-        'endTime': 1689807600000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/05.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Encontro das Mulheres',
-        'type': 'EVENT',
-        'description': 'Um tempo para as irmãs falarem de Deus da perspectiva feminina',
-        'startTime': 1689721200000,
-        'endTime': 1689721200000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/05.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Encontro dos Homens',
-        'type': 'EVENT',
-        'description': 'Todos os homens convocados para a batalha!',
-        'startTime': 1690066800000,
-        'endTime': 1690066800000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
     // junho
 
     await http.post(
@@ -717,11 +35,19 @@ class _LoginScreenState extends State<LoginScreen> {
       },
       body: json.encode({
         'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1688331600000,
-        'endTime': 1688331600000,
-        'location': 'Igreja Presbiteriana Renovada',
+        'category': EventCategory.WORKSHIP.toString(),
+        'simpleDescription': 'Culto de domingo',
+        'detailedDescription':
+            'Culto formal estabelecido pela igreja que deve ocorrer da maneira ordeira todo domingo',
+        'theme': 'Proverbios',
+        'lecturer': 'Pr. João',
+        'local': 'Igreja Presbiteriana Renovada da Indaiatuba',
+        'address':
+            'Alameda Dr. José Cardeal, 116 - Jardim Paraíso, Indaiatuba - SP, 13343-100',
+        'startTime': 1685912400000,
+        'endTime': 1685919600000,
+        'latitude': -23.093760,
+        'longitude': -47.205270,
       }),
     );
 
@@ -732,11 +58,19 @@ class _LoginScreenState extends State<LoginScreen> {
       },
       body: json.encode({
         'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1688936400000,
-        'endTime': 1688936400000,
-        'location': 'Igreja Presbiteriana Renovada',
+        'category': EventCategory.WORKSHIP.toString(),
+        'simpleDescription': 'Culto de domingo',
+        'detailedDescription':
+            'Culto formal estabelecido pela igreja que deve ocorrer da maneira ordeira todo domingo',
+        'theme': 'Proverbios',
+        'lecturer': 'Pr. João',
+        'startTime': 1686517200000,
+        'endTime': 1686524400000,
+        'local': 'Igreja Presbiteriana Renovada da Indaiatuba',
+        'address':
+            'Alameda Dr. José Cardeal, 116 - Jardim Paraíso, Indaiatuba - SP, 13343-100',
+        'latitude': -23.093760,
+        'longitude': -47.205270,
       }),
     );
 
@@ -747,11 +81,19 @@ class _LoginScreenState extends State<LoginScreen> {
       },
       body: json.encode({
         'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1689541200000,
-        'endTime': 1689541200000,
-        'location': 'Igreja Presbiteriana Renovada',
+        'category': EventCategory.WORKSHIP.toString(),
+        'simpleDescription': 'Culto de domingo',
+        'detailedDescription':
+            'Culto formal estabelecido pela igreja que deve ocorrer da maneira ordeira todo domingo',
+        'theme': 'Proverbios',
+        'lecturer': 'Pr. João',
+        'startTime': 1687122000000,
+        'endTime': 1687129200000,
+        'local': 'Igreja Presbiteriana Renovada da Indaiatuba',
+        'address':
+            'Alameda Dr. José Cardeal, 116 - Jardim Paraíso, Indaiatuba - SP, 13343-100',
+        'latitude': -23.093760,
+        'longitude': -47.205270,
       }),
     );
 
@@ -762,11 +104,19 @@ class _LoginScreenState extends State<LoginScreen> {
       },
       body: json.encode({
         'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1690146000000,
-        'endTime': 1690146000000,
-        'location': 'Igreja Presbiteriana Renovada',
+        'category': EventCategory.WORKSHIP.toString(),
+        'simpleDescription': 'Culto de domingo',
+        'detailedDescription':
+            'Culto formal estabelecido pela igreja que deve ocorrer da maneira ordeira todo domingo',
+        'theme': 'Proverbios',
+        'lecturer': 'Pr. João',
+        'startTime': 1687726800000,
+        'endTime': 1687734000000,
+        'local': 'Igreja Presbiteriana Renovada da Indaiatuba',
+        'address':
+            'Alameda Dr. José Cardeal, 116 - Jardim Paraíso, Indaiatuba - SP, 13343-100',
+        'latitude': -23.093760,
+        'longitude': -47.205270,
       }),
     );
 
@@ -776,27 +126,20 @@ class _LoginScreenState extends State<LoginScreen> {
         'Content-Type': 'application/json',
       },
       body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1690750800000,
-        'endTime': 1690750800000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/06.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'EBF',
-        'type': 'EVENT',
-        'description': 'Escola bíblica dominical especial de férias',
-        'startTime': 1689508800000,
-        'endTime': 1689508800000,
-        'location': 'Igreja Presbiteriana Renovada',
+        'title': 'EBD',
+        'category': EventCategory.DOMINICAL_BIBLICAL_SCHOOL.toString(),
+        'simpleDescription': 'Escola Bíblica Dominical',
+        'detailedDescription':
+            'Escola bíblica dominical para todas as idades, vamos aprender mais sobre a palavra de Deus guiados pelas escrituras e o livro base da EBD',
+        'theme': 'Proverbios',
+        'lecturer': 'Felipe Genari',
+        'startTime': 1687694400000,
+        'endTime': 1687698900000,
+        'local': 'Igreja Presbiteriana Renovada da Indaiatuba',
+        'address':
+            'Alameda Dr. José Cardeal, 116 - Jardim Paraíso, Indaiatuba - SP, 13343-100',
+        'latitude': -23.093760,
+        'longitude': -47.205270,
       }),
     );
 
@@ -807,11 +150,19 @@ class _LoginScreenState extends State<LoginScreen> {
       },
       body: json.encode({
         'title': 'Encontro de casais',
-        'type': 'EVENT',
-        'description': 'Para namorados e casados!',
-        'startTime': 1689807600000,
-        'endTime': 1689807600000,
-        'location': 'Igreja Presbiteriana Renovada',
+        'category': EventCategory.MARRIAGE_MINISTRY.toString(),
+        'simpleDescription': 'Para casados e noivos',
+        'detailedDescription':
+            'Palavra direcionada para casais e noivos, vamos aprender mais sobre o casamento e como Deus quer que vivamos em família e como devemos nos relacionar com nossos cônjuges e filhos e como devemos nos relacionar com Deus',
+        'theme': 'Homens e Mulheres de Deus',
+        'lecturer': 'Felipe Genari e Lilian de Castro',
+        'startTime': 1686438000000,
+        'endTime': 1686441600000,
+        'local': 'Igreja Presbiteriana Renovada da Indaiatuba',
+        'address':
+            'Alameda Dr. José Cardeal, 116 - Jardim Paraíso, Indaiatuba - SP, 13343-100',
+        'latitude': -23.093760,
+        'longitude': -47.205270,
       }),
     );
 
@@ -822,11 +173,19 @@ class _LoginScreenState extends State<LoginScreen> {
       },
       body: json.encode({
         'title': 'Encontro das Mulheres',
-        'type': 'EVENT',
-        'description': 'Um tempo para as irmãs falarem de Deus da perspectiva feminina',
-        'startTime': 1689721200000,
-        'endTime': 1689721200000,
-        'location': 'Igreja Presbiteriana Renovada',
+        'category': EventCategory.WOMENS_MINISTRY.toString(),
+        'simpleDescription': 'Culto das mulheres para mulheres',
+        'detailedDescription':
+            'Venha aprender um pouco mais sobre a palavra de Deus direcionada para as mulheres e suas necessidades e como Deus pode te ajudar a superar os desafios da vida',
+        'theme': 'Proverbios',
+        'lecturer': 'Silvia',
+        'startTime': 1686092400000,
+        'endTime': 1686096000000,
+        'local': 'Igreja Presbiteriana Renovada da Indaiatuba',
+        'address':
+            'Alameda Dr. José Cardeal, 116 - Jardim Paraíso, Indaiatuba - SP, 13343-100',
+        'latitude': -23.093760,
+        'longitude': -47.205270,
       }),
     );
 
@@ -837,11 +196,19 @@ class _LoginScreenState extends State<LoginScreen> {
       },
       body: json.encode({
         'title': 'Encontro dos Homens',
-        'type': 'EVENT',
-        'description': 'Todos os homens convocados para a batalha!',
-        'startTime': 1690066800000,
-        'endTime': 1690066800000,
-        'location': 'Igreja Presbiteriana Renovada',
+        'category': EventCategory.MENS_MINISTRY.toString(),
+        'simpleDescription': 'Culto direcionado para homens',
+        'detailedDescription':
+            'Culto com a palavra de Deus direcionada para os homens que buscam uma vida de santidade e comunhão com Deus e com os irmãos da igreja de Cristo Jesus',
+        'theme': 'Proverbios',
+        'lecturer': 'Pastor Eliseu',
+        'startTime': 1687035600000,
+        'endTime': 1687039200000,
+        'local': 'Igreja Presbiteriana Renovada da Indaiatuba',
+        'address':
+            'Alameda Dr. José Cardeal, 116 - Jardim Paraíso, Indaiatuba - SP, 13343-100',
+        'latitude': -23.093760,
+        'longitude': -47.205270,
       }),
     );
 
@@ -854,11 +221,19 @@ class _LoginScreenState extends State<LoginScreen> {
       },
       body: json.encode({
         'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
+        'category': EventCategory.WORKSHIP.toString(),
+        'simpleDescription': 'Culto de domingo',
+        'detailedDescription':
+            'Culto formal estabelecido pela igreja que deve ocorrer da maneira ordeira todo domingo',
+        'theme': 'Proverbios',
+        'lecturer': 'Seminarista João',
         'startTime': 1688331600000,
-        'endTime': 1688331600000,
-        'location': 'Igreja Presbiteriana Renovada',
+        'endTime': 1688338800000,
+        'local': 'Igreja Presbiteriana Renovada da Indaiatuba',
+        'address':
+            'Alameda Dr. José Cardeal, 116 - Jardim Paraíso, Indaiatuba - SP, 13343-100',
+        'latitude': -23.093760,
+        'longitude': -47.205270,
       }),
     );
 
@@ -869,11 +244,19 @@ class _LoginScreenState extends State<LoginScreen> {
       },
       body: json.encode({
         'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
+        'category': EventCategory.WORKSHIP.toString(),
+        'simpleDescription': 'Culto de domingo',
+        'detailedDescription':
+            'Culto formal estabelecido pela igreja que deve ocorrer da maneira ordeira todo domingo',
+        'theme': 'Proverbios',
+        'lecturer': 'Seminarista Camile',
         'startTime': 1688936400000,
-        'endTime': 1688936400000,
-        'location': 'Igreja Presbiteriana Renovada',
+        'endTime': 1688943600000,
+        'local': 'Igreja Presbiteriana Renovada da Indaiatuba',
+        'address':
+            'Alameda Dr. José Cardeal, 116 - Jardim Paraíso, Indaiatuba - SP, 13343-100',
+        'latitude': -23.093760,
+        'longitude': -47.205270,
       }),
     );
 
@@ -884,11 +267,19 @@ class _LoginScreenState extends State<LoginScreen> {
       },
       body: json.encode({
         'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
+        'category': EventCategory.WORKSHIP.toString(),
+        'simpleDescription': 'Culto de domingo',
+        'detailedDescription':
+            'Culto formal estabelecido pela igreja que deve ocorrer da maneira ordeira todo domingo',
+        'theme': 'Proverbios',
+        'lecturer': 'Seminarista Armando',
         'startTime': 1689541200000,
-        'endTime': 1689541200000,
-        'location': 'Igreja Presbiteriana Renovada',
+        'endTime': 1688331600000,
+        'local': 'Igreja Presbiteriana Renovada da Indaiatuba',
+        'address':
+            'Alameda Dr. José Cardeal, 116 - Jardim Paraíso, Indaiatuba - SP, 13343-100',
+        'latitude': -23.093760,
+        'longitude': -47.205270,
       }),
     );
 
@@ -899,11 +290,19 @@ class _LoginScreenState extends State<LoginScreen> {
       },
       body: json.encode({
         'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
+        'category': EventCategory.WORKSHIP.toString(),
+        'simpleDescription': 'Culto de domingo',
+        'detailedDescription':
+            'Culto formal estabelecido pela igreja que deve ocorrer da maneira ordeira todo domingo',
+        'theme': 'Proverbios',
+        'lecturer': 'Seminarista Samuel',
         'startTime': 1690146000000,
-        'endTime': 1690146000000,
-        'location': 'Igreja Presbiteriana Renovada',
+        'endTime': 1690153200000,
+        'local': 'Igreja Presbiteriana Renovada da Indaiatuba',
+        'address':
+            'Alameda Dr. José Cardeal, 116 - Jardim Paraíso, Indaiatuba - SP, 13343-100',
+        'latitude': -23.093760,
+        'longitude': -47.205270,
       }),
     );
 
@@ -914,11 +313,19 @@ class _LoginScreenState extends State<LoginScreen> {
       },
       body: json.encode({
         'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1690750800000,
+        'category': EventCategory.WORKSHIP.toString(),
+        'simpleDescription': 'Culto de domingo',
+        'detailedDescription':
+            'Culto formal estabelecido pela igreja que deve ocorrer da maneira ordeira todo domingo',
+        'theme': 'Proverbios',
+        'lecturer': 'Pastor Eliseu',
+        'startTime': 1690758000000,
         'endTime': 1690750800000,
-        'location': 'Igreja Presbiteriana Renovada',
+        'local': 'Igreja Presbiteriana Renovada da Indaiatuba',
+        'address':
+            'Alameda Dr. José Cardeal, 116 - Jardim Paraíso, Indaiatuba - SP, 13343-100',
+        'latitude': -23.093760,
+        'longitude': -47.205270,
       }),
     );
 
@@ -929,11 +336,19 @@ class _LoginScreenState extends State<LoginScreen> {
       },
       body: json.encode({
         'title': 'EBF',
-        'type': 'EVENT',
-        'description': 'Escola bíblica dominical especial de férias',
+        'category': EventCategory.DOMINICAL_BIBLICAL_SCHOOL.toString(),
+        'simpleDescription': 'Escola Bíblica Dominical',
+        'detailedDescription':
+            'Escola bíblica dominical para todas as idades, vamos aprender mais sobre a palavra de Deus guiados pelas escrituras e o livro base da EBD',
+        'theme': 'Proverbios',
+        'lecturer': 'Felipe Genari',
         'startTime': 1689508800000,
-        'endTime': 1689508800000,
-        'location': 'Igreja Presbiteriana Renovada',
+        'endTime': 1689514200000,
+        'local': 'Igreja Presbiteriana Renovada da Indaiatuba',
+        'address':
+            'Alameda Dr. José Cardeal, 116 - Jardim Paraíso, Indaiatuba - SP, 13343-100',
+        'latitude': -23.093760,
+        'longitude': -47.205270,
       }),
     );
 
@@ -944,11 +359,19 @@ class _LoginScreenState extends State<LoginScreen> {
       },
       body: json.encode({
         'title': 'Encontro de casais',
-        'type': 'EVENT',
-        'description': 'Para namorados e casados!',
-        'startTime': 1689807600000,
-        'endTime': 1689807600000,
-        'location': 'Igreja Presbiteriana Renovada',
+        'category': EventCategory.MARRIAGE_MINISTRY.toString(),
+        'simpleDescription': 'Para casados e noivos',
+        'detailedDescription':
+            'Palavra direcionada para casais e noivos, vamos aprender mais sobre o casamento e como Deus quer que vivamos em família e como devemos nos relacionar com nossos cônjuges e filhos e como devemos nos relacionar com Deus',
+        'theme': 'Homens e Mulheres de Deus',
+        'lecturer': 'Felipe Genari e Lilian de Castro',
+        'startTime': 1690066800000,
+        'endTime': 1690070400000,
+        'local': 'Igreja Presbiteriana Renovada da Indaiatuba',
+        'address':
+            'Alameda Dr. José Cardeal, 116 - Jardim Paraíso, Indaiatuba - SP, 13343-100',
+        'latitude': -23.093760,
+        'longitude': -47.205270,
       }),
     );
 
@@ -959,11 +382,19 @@ class _LoginScreenState extends State<LoginScreen> {
       },
       body: json.encode({
         'title': 'Encontro das Mulheres',
-        'type': 'EVENT',
-        'description': 'Um tempo para as irmãs falarem de Deus da perspectiva feminina',
-        'startTime': 1689721200000,
-        'endTime': 1689721200000,
-        'location': 'Igreja Presbiteriana Renovada',
+        'category': EventCategory.WOMENS_MINISTRY.toString(),
+        'simpleDescription': 'Culto das mulheres para mulheres',
+        'detailedDescription':
+            'Venha aprender um pouco mais sobre a palavra de Deus direcionada para as mulheres e suas necessidades e como Deus pode te ajudar a superar os desafios da vida',
+        'theme': 'Proverbios',
+        'lecturer': 'Silvia',
+        'startTime': 1689116400000,
+        'endTime': 1689120000000,
+        'local': 'Igreja Presbiteriana Renovada da Indaiatuba',
+        'address':
+            'Alameda Dr. José Cardeal, 116 - Jardim Paraíso, Indaiatuba - SP, 13343-100',
+        'latitude': -23.093760,
+        'longitude': -47.205270,
       }),
     );
 
@@ -974,562 +405,19 @@ class _LoginScreenState extends State<LoginScreen> {
       },
       body: json.encode({
         'title': 'Encontro dos Homens',
-        'type': 'EVENT',
-        'description': 'Todos os homens convocados para a batalha!',
-        'startTime': 1690066800000,
-        'endTime': 1690066800000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    // agosto
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/08.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1688331600000,
-        'endTime': 1688331600000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/08.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1688936400000,
-        'endTime': 1688936400000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/08.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1689541200000,
-        'endTime': 1689541200000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/08.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1690146000000,
-        'endTime': 1690146000000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/08.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1690750800000,
-        'endTime': 1690750800000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/08.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'EBF',
-        'type': 'EVENT',
-        'description': 'Escola bíblica dominical especial de férias',
-        'startTime': 1689508800000,
-        'endTime': 1689508800000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/08.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Encontro de casais',
-        'type': 'EVENT',
-        'description': 'Para namorados e casados!',
-        'startTime': 1689807600000,
-        'endTime': 1689807600000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/08.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Encontro das Mulheres',
-        'type': 'EVENT',
-        'description': 'Um tempo para as irmãs falarem de Deus da perspectiva feminina',
-        'startTime': 1689721200000,
-        'endTime': 1689721200000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/08.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Encontro dos Homens',
-        'type': 'EVENT',
-        'description': 'Todos os homens convocados para a batalha!',
-        'startTime': 1690066800000,
-        'endTime': 1690066800000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    // setembro
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/09.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1688331600000,
-        'endTime': 1688331600000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/09.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1688936400000,
-        'endTime': 1688936400000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/09.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1689541200000,
-        'endTime': 1689541200000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/09.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1690146000000,
-        'endTime': 1690146000000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/09.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1690750800000,
-        'endTime': 1690750800000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/09.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'EBF',
-        'type': 'EVENT',
-        'description': 'Escola bíblica dominical especial de férias',
-        'startTime': 1689508800000,
-        'endTime': 1689508800000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/09.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Encontro de casais',
-        'type': 'EVENT',
-        'description': 'Para namorados e casados!',
-        'startTime': 1689807600000,
-        'endTime': 1689807600000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/09.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Encontro das Mulheres',
-        'type': 'EVENT',
-        'description': 'Um tempo para as irmãs falarem de Deus da perspectiva feminina',
-        'startTime': 1689721200000,
-        'endTime': 1689721200000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/09.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Encontro dos Homens',
-        'type': 'EVENT',
-        'description': 'Todos os homens convocados para a batalha!',
-        'startTime': 1690066800000,
-        'endTime': 1690066800000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    // outubro
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/10.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1688331600000,
-        'endTime': 1688331600000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/10.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1688936400000,
-        'endTime': 1688936400000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/10.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1689541200000,
-        'endTime': 1689541200000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/10.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1690146000000,
-        'endTime': 1690146000000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/10.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1690750800000,
-        'endTime': 1690750800000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/10.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'EBF',
-        'type': 'EVENT',
-        'description': 'Escola bíblica dominical especial de férias',
-        'startTime': 1689508800000,
-        'endTime': 1689508800000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/10.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Encontro de casais',
-        'type': 'EVENT',
-        'description': 'Para namorados e casados!',
-        'startTime': 1689807600000,
-        'endTime': 1689807600000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/10.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Encontro das Mulheres',
-        'type': 'EVENT',
-        'description': 'Um tempo para as irmãs falarem de Deus da perspectiva feminina',
-        'startTime': 1689721200000,
-        'endTime': 1689721200000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/10.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Encontro dos Homens',
-        'type': 'EVENT',
-        'description': 'Todos os homens convocados para a batalha!',
-        'startTime': 1690066800000,
-        'endTime': 1690066800000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    // novembro
-    // sem nada para ser usado de exemplo
-
-    // dezembro
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/12.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1688331600000,
-        'endTime': 1688331600000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/12.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1688936400000,
-        'endTime': 1688936400000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/12.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1689541200000,
-        'endTime': 1689541200000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/12.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1690146000000,
-        'endTime': 1690146000000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/12.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Culto',
-        'type': 'WORSHIP',
-        'description': 'Culto de domingo',
-        'startTime': 1690750800000,
-        'endTime': 1690750800000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/12.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'EBF',
-        'type': 'EVENT',
-        'description': 'Escola bíblica dominical especial de férias',
-        'startTime': 1689508800000,
-        'endTime': 1689508800000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/12.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Encontro de casais',
-        'type': 'EVENT',
-        'description': 'Para namorados e casados!',
-        'startTime': 1689807600000,
-        'endTime': 1689807600000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/12.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Encontro das Mulheres',
-        'type': 'EVENT',
-        'description': 'Um tempo para as irmãs falarem de Deus da perspectiva feminina',
-        'startTime': 1689721200000,
-        'endTime': 1689721200000,
-        'location': 'Igreja Presbiteriana Renovada',
-      }),
-    );
-
-    await http.post(
-      Uri.parse('$baseUrl/2023/12.json'),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: json.encode({
-        'title': 'Encontro dos Homens',
-        'type': 'EVENT',
-        'description': 'Todos os homens convocados para a batalha!',
-        'startTime': 1690066800000,
-        'endTime': 1690066800000,
-        'location': 'Igreja Presbiteriana Renovada',
+        'category': EventCategory.MENS_MINISTRY.toString(),
+        'simpleDescription': 'Culto direcionado para homens',
+        'detailedDescription':
+            'Culto com a palavra de Deus direcionada para os homens que buscam uma vida de santidade e comunhão com Deus e com os irmãos da igreja de Cristo Jesus',
+        'theme': 'Proverbios',
+        'lecturer': 'Pastor Eliseu',
+        'startTime': 1690664400000,
+        'endTime': 1690668000000,
+        'local': 'Igreja Presbiteriana Renovada da Indaiatuba',
+        'address':
+            'Alameda Dr. José Cardeal, 116 - Jardim Paraíso, Indaiatuba - SP, 13343-100',
+        'latitude': -23.093760,
+        'longitude': -47.205270,
       }),
     );
   }
@@ -1579,7 +467,7 @@ class _LoginScreenState extends State<LoginScreen> {
     super.initState();
     _passwordVisible = false;
 
-    // _createDataBase();
+    _createDataBase();
   }
 
   @override
@@ -1630,10 +518,8 @@ class _LoginScreenState extends State<LoginScreen> {
                             decoration: InputDecoration(
                               labelText: 'Password',
                               hintText: 'Enter your password',
-                              // Here is key idea
                               suffixIcon: IconButton(
                                 icon: Icon(
-                                  // Based on passwordVisible state choose the icon
                                   _passwordVisible
                                       ? Icons.visibility
                                       : Icons.visibility_off,
@@ -1690,7 +576,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ),
                 ),
-              )
+              ),
             ],
           ),
         ),

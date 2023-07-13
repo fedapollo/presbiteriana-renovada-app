@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:igreja_presbiteriana_app/screens/home.dart';
-import 'package:igreja_presbiteriana_app/screens/settings.dart';
+import 'package:igreja_presbiteriana_app/screens/profile.dart';
 
 class BottomNavigationTabScreen extends StatefulWidget {
   const BottomNavigationTabScreen({Key? key}) : super(key: key);
@@ -22,7 +22,7 @@ class _BottomNavigationTabScreenState extends State<BottomNavigationTabScreen> {
   @override
   Widget build(BuildContext context) {
     Widget container =
-        _selectedPageIndex == 1 ? const SettingsScreen() : const HomeScreen();
+        _selectedPageIndex == 1 ? const ProfileScreen() : const HomeScreen();
 
     return Scaffold(
         body: container,
@@ -39,9 +39,9 @@ class _BottomNavigationTabScreenState extends State<BottomNavigationTabScreen> {
               label: 'Home',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.settings),
+              icon: Icon(Icons.person),
               backgroundColor: Colors.white,
-              label: 'Configurações',
+              label: 'Perfil',
             ),
           ],
         ));
